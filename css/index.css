@@ -2,6 +2,17 @@
 html,body{
     font-family: 'Roboto Condensed', sans-serif;
 }
+.line::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: inline-block;
+    transition: all 0.5s;
+}
 
 /* HEADER */
 header{
@@ -19,20 +30,14 @@ header p.phoneNumber{
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-#movieNavbar .nav-item::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    display: block;
-    /* #fbbd61,#ec7532 */
-    background:linear-gradient(to right,#fbbd61,#ec7532);
-    transition: all 0.5s;
+#movieNavbar .nav-item {
+    position: relative;
 }
-#movieNavbar .nav-item:hover::after {
-    width:100%;
+#movieNavbar .navbar-nav li.nav-item a.nav-link:hover{
+    color: rgba(255,255,255,1);
 }
 
-#movieNavbar .nav-item.active::after{
+#movieNavbar .nav-item.active::after,#movieNavbar .nav-item:hover::after{
     width: 100%;
 }
 .navbar-nav li.nav-item a.nav-link{
@@ -156,14 +161,8 @@ header p.phoneNumber{
     padding-bottom: 20px;
     position: relative;
 }
-.newIN h2::after{
-    content: '';
+.newIN h2.line::after{
     width: 125px;
-    height: 4px;
-    background-image: linear-gradient(to right, #fbbd61, #ec7532);
-    position: absolute;
-    bottom: -1px;
-    left: 0;
 }
 .newIN__img{
     position: relative;
@@ -231,10 +230,99 @@ header p.phoneNumber{
 i.movie__star{
     color: #fbbd61;
 }
+/* End newIN */
+
+/* Show Time */
+.showTimes .nav-tabs .nav-link{
+    position: relative;
+    color: #4a4a4a;
+    padding: 10px 30px 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.showTimes .nav-tabs .nav-link.active{
+    color: #ec7532;
+}
+
+.showTimes .nav-tabs .nav-link.active.line::after,.showTimes .nav-tabs .nav-link:hover.line::after{
+    width: 100%;
+}
+
+.showTimes .nav-tabs .nav-item .nav-link, .nav-tabs .nav-link.active, .showTimes .nav-tabs .nav-link:hover{
+    border: white;
+}
+#myTabShowTime{
+    padding: 45px 0px;
+}
+.showtime__item{
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.showtime__item img{
+    border-radius: 10px;
+}
+.showtime__details > p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.showtime__details > span{
+    font-size: 14px;
+    color: #ec7532;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.showtime__details > h3{
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #101010;
+    margin-bottom: 10px;
+}
+.showtime__details > a{
+    font-size: 12px;
+    color: #ec7532;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.showtime__details > a:hover{
+    color: #101010;
+    text-decoration: none;
+}
+.showtime__list i, .showtime__list span{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #4a4a4a;
+
+}
+.showtime__list .showtime__length span{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+}
+.showtime__list button.btn-secondary{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #717171;
+    background-color: #d8d8d8;
+    border: transparent;
+    cursor: text;
+}
+.showtime__list button.btn-secondary:focus{
+    outline: none;
+    border: none;  
+    box-shadow: none;  
+}
+.showtime__list button .disabled{
+    opacity: 0.5;
+}
 
 
-
-
+/* End Show Time */
 
 
 @media screen and (max-width: 576px){
