@@ -349,6 +349,55 @@ i.movie__star{
 }
 /* end contact */
 
+
+/* FOOTER */
+footer{
+    padding-top: 75px;
+    background: #101010;
+}
+footer .row h6{
+    font-size: 16px;
+    color: #ec7532;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+}
+footer .row ul{
+    list-style: none;
+    padding: 0;
+}
+footer a{
+    color: white;
+    padding: 3px 0;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+footer a:hover{
+    color: #fbbd61;
+    text-decoration: none;
+}
+footer a i{
+    width: 25px;
+    color: rgba(255,255,255,.3);
+    transition: all 0.5s;
+}
+footer a:hover i{
+    color: #fbbd61;
+}
+footer .copyright{
+    margin-top: 50px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    padding: 20px 0px;
+    font-size: 14px;
+}
+footer .copyright a:hover{
+    color: #ec7532;
+}
+
+/*END FOOTER */
+
 @media screen and (max-width: 576px){
     #myTabShowTime img{
         width: 100%;
