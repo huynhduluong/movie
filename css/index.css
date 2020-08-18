@@ -184,10 +184,16 @@ header p.phoneNumber{
     width: 80px;
     height: 80px;
     font-size: 14px;
-    line-height: 76px;
+    line-height: 80px;
     border: 2px solid white;
     border-radius: 50%;
     margin: 15px auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding-left: 8px;
+}
+.newIN__play i:hover{
+    transform: scale(0.8);
 }
 .newIN__play a{
     font-size: 14px;
