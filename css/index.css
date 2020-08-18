@@ -325,6 +325,30 @@ i.movie__star{
 /* End Show Time */
 
 
+
+
+
+
+/* contact */
+.contact{
+    padding: 50px 0px;
+    text-align: center;
+}
+.contact p{
+    font-size: 23px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #4a4a4a;
+    letter-spacing: 1px;
+}
+.contact h2{
+    font-size: 46px;
+    font-weight: 400;
+    color: #ec7532;
+    letter-spacing: 1px;
+}
+/* end contact */
+
 @media screen and (max-width: 576px){
     #myTabShowTime img{
         width: 100%;
