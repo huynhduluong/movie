@@ -516,14 +516,14 @@ footer{
     padding-top: 75px;
     background: #101010;
 }
-footer .row h6{
+footer h6{
     font-size: 16px;
     color: #ec7532;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-bottom: 20px;
 }
-footer .row ul{
+footer ul{
     list-style: none;
     padding: 0;
 }
@@ -562,5 +562,11 @@ footer .copyright a:hover{
 @media screen and (max-width: 576px){
     #myTabShowTime img{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    footer h6{
+        font-size: 14px;
     }
 }
