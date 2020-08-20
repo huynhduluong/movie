@@ -418,28 +418,28 @@ i.movie__star{
 .coming__trailer:hover  i{
     transform: translate(-50%, -50%) scale(0.9);
 }
-.coming__list{
+.movieList{
     padding: 55px 0px;
     background: black;
 }
-.coming__item {
+.movieList__item {
     text-align: center;
     cursor: pointer;
     opacity: 0.35;
     transition: all 0.5s;
 }
-.coming__item:hover, .coming__item.active{
+.movieList__item:hover, .movieList__item.active{
     opacity: 1;
 }
-.coming__item img{
+.movieList__item img{
     border-radius: 10px;
 }
-.coming__item h5{
+.movieList__item h5{
     font-size: 16px;
     overflow: hidden;
     margin-top: 20px;
 }
-.coming__item p{
+.movieList__item p{
     font-size: 14px;
     opacity: 0.5;
 }
