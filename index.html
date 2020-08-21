@@ -16,7 +16,11 @@
     <!-- BS4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
+    
+    
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -87,7 +91,11 @@
                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.</p>
                     <div class="movieCarousel__trailer">
                         <span class="text-white d-inline-block rounded-circle text-center">PG</span>
-                        <button class="btn-orange border-0 text-white"><i class="fa fa-play"></i> PLAY TRAILER</button>
+                        <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="videoCarousel">
+                            <button class="btn-orange border-0 text-white">
+                                <i class="fa fa-play"></i> PLAY TRAILER
+                            </button>
+                        </a>
                     </div>
                 </div>
               </div>
@@ -100,7 +108,11 @@
                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.</p>
                     <div class="movieCarousel__trailer">
                         <span class="text-white d-inline-block rounded-circle text-center">PG</span>
-                        <button class="btn-orange border-0 text-white"><i class="fa fa-play"></i> PLAY TRAILER</button>
+                        <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="videoCarousel">
+                            <button class="btn-orange border-0 text-white">
+                                <i class="fa fa-play"></i> PLAY TRAILER
+                            </button>
+                        </a>
                     </div>
                 </div>
               </div>
@@ -113,7 +125,11 @@
                     <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.</p>
                     <div class="movieCarousel__trailer">
                         <span class="text-white d-inline-block rounded-circle text-center">PG</span>
-                        <button class="btn-orange border-0 text-white"><i class="fa fa-play"></i> PLAY TRAILER</button>
+                        <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="videoCarousel">
+                            <button class="btn-orange border-0 text-white">
+                                <i class="fa fa-play"></i> PLAY TRAILER
+                            </button>
+                        </a>
                     </div>
                 </div>
               </div>
@@ -141,7 +157,7 @@
                         <img class="img-fluid" src="./img/movie-1.jpg" alt="">
                         <div class="newIN__overlay"></div>
                         <div class="newIN__play">
-                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be"  target="_blank">
+                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be" class="videoNewIn1">
                                 <i class="fa fa-play"></i>
                             </a>
                             
@@ -165,7 +181,7 @@
                         <img class="img-fluid"src="./img/movie-2.jpg" alt="">
                         <div class="newIN__overlay"></div>
                         <div class="newIN__play">
-                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be"  target="_blank">
+                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be" class="videoNewIn2">
                                 <i class="fa fa-play"></i>
                             </a>
                             
@@ -189,7 +205,7 @@
                         <img class="img-fluid" src="./img/movie-3.jpg" alt="">
                         <div class="newIN__overlay"></div>
                         <div class="newIN__play">
-                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be"  target="_blank">
+                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be" class="videoNewIn3">
                                 <i class="fa fa-play"></i>
                             </a>
                             
@@ -213,7 +229,7 @@
                         <img class="img-fluid" src="./img/movie-4.jpg" alt="">
                         <div class="newIN__overlay"></div>
                         <div class="newIN__play">
-                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be" target="_blank">
+                            <a href="https://www.youtube.com/watch?v=d96cjJhvlMA&feature=youtu.be" class="videoNewIn4"
                                 <i class="fa fa-play"></i>
                             </a>
                             
@@ -1005,7 +1021,7 @@
                     </div>
                     <div class="col-12 col-sm-6 mt-4 mt-sm-0">
                         <div href="#" class="coming__trailer">
-                            <a href="#">
+                            <a href="https://www.youtube.com/watch?v=RhFMIRuHAL4&feature=youtu.be" class="videoComingSoon">
                                 <img class="img-fluid" src="./img/slide-3-video.png" alt="">
                                 <i class="fa fa-play"></i>
                             </a>
@@ -1138,11 +1154,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-
     <script>
         $('#movieCarousel').carousel({
             interval: 2000
         })
+    </script>
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="./js/jquery.magnific-popup.js"></script>   
+    <!-- https://www.youtube.com/embed/RhFMIRuHAL4?rel=0&autoplay=1 -->
+
+    <script>
+        $(document).ready(function() {            
+	        $('.videoCarousel, .videoComingSoon, .videoNewIn1, .videoNewIn2, .videoNewIn3, .videoNewIn4').magnificPopup({
+                disableOn: 700,
+                type: 'iframe',                
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false
+            });
+        });
     </script>
 
 </body>
