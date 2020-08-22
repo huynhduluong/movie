@@ -108,12 +108,7 @@ header p.phoneNumber{
     line-height: 0.8em;
 
 }
-button.navbar-toggler{
-    outline: none;
-}
-button.navbar-toggler span{
-    color: #fbbd61;
-}
+
 
 /* CAROUSEL */
 .movieCarousel{
@@ -664,3 +659,62 @@ footer .copyright a:hover{
 }
 
 
+@media screen and (max-width: 768px){
+    /* chỉnh header */
+    nav.navbar>.navbar-brand>img{
+        max-width: 150px;
+    }
+    .navbar-collapse{
+        margin: 0px -15px;
+    }
+    .navbar-collapse>ul{
+        background: rgba(0,0,0,.9);
+    }
+    #movieNavbar .nav-item.active::after{
+        width: 0;
+    }
+    #movieNavbar .nav-item.active:hover::after{
+        width: 100%;
+    }
+    #movieNavbar .navbar-nav li.nav-item.active a.nav-link:hover{
+        color: #ec7532;
+    }
+    button.navbar-toggler{
+        outline: none;
+        padding-right: 0px;
+    }
+    button.navbar-toggler span{
+        color: #fbbd61;
+    }
+    .navbar-nav li.nav-item a.nav-link{
+        font-size: 14px;
+        text-align: center;
+        padding: 15px;
+    }
+    #movieNavbar .nav-item.active a.nav-link{
+        color: #ec7532;
+    }
+    .navbar-nav>li>.dropdown-menu{        
+        padding: 25px 10px;
+        display: block;
+        background: rgba(236, 118, 50, 0.8);
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    .navbar-nav>li>.dropdown-menu a{
+        color: white;
+        font-size: 12px;
+        text-align: center;
+        padding: 0px;
+    }
+    button.navbar-toggler .icon-bar{
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: #fbbd61;
+        margin-top: 4px;
+    }
+
+
+}
