@@ -167,7 +167,7 @@ header p.phoneNumber{
     letter-spacing: 2px;
 }
 #movieCarousel .carousel-caption h2{
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 300;
     padding: 0;
     letter-spacing: 3px;
@@ -178,7 +178,7 @@ header p.phoneNumber{
     padding-right: 25%;
     margin-bottom: 20px;
 }
-.movieCarousel__trailer span{
+.movieCarousel__trailer>span{
     width: 48px;
     height: 48px;
     border: 2px solid white;
@@ -189,25 +189,36 @@ header p.phoneNumber{
 }
 
 .movieCarousel__trailer .btn-orange{
-    /* position: relative; */
+    position: relative;
     background: linear-gradient(to right, #fbbd61, #ec7532);
     width: 200px;
     border-radius: 30px;
     font-size: 13px;
     letter-spacing: 2px;
-    padding: 11px 30px;
+    padding: 12px 24px;
     cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
 }
-/* .button__trailer .button__overlay{
+.movieCarousel__trailer .btn-orange::before{
+    content: '';
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
+    width: 120%;
     height: 100%;
-    background-color: #ec7532;
-    transform: skewX(30deg) translateX(-50%);
-    transition: all 0.5s;
-} */
+    background: #ec7532;
+    transform: translateX(-120%) skew(30deg);
+    transition: all 0.4s;
+}
+.movieCarousel__trailer .btn-orange:hover::before{
+    transform: translateX(-10%) skew(30deg);
+}
+.movieCarousel__trailer .btn-orange i,.movieCarousel__trailer .btn-orange span{
+    z-index: 1;
+    position: relative;
+}
+
 img.scroll{
     position: absolute;
     bottom: 0;
@@ -600,6 +611,10 @@ footer .copyright a:hover{
     .container {
         padding: 15px;
     }
+    /*chỉnh h2 của carousel*/
+    #movieCarousel .carousel-caption h2{
+        font-size: 42px;    
+    }    
 
     /* chỉnh showtimes nav-item */
     .showTimes .nav-tabs .nav-link{
@@ -715,6 +730,10 @@ footer .copyright a:hover{
         background: #fbbd61;
         margin-top: 4px;
     }
+    /*End chỉnh header */
 
+    #movieCarousel .carousel-caption p{
+        padding-right: 0;
+    }   
 
 }
