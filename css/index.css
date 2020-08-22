@@ -108,7 +108,12 @@ header p.phoneNumber{
     line-height: 0.8em;
 
 }
-
+button.navbar-toggler{
+    outline: none;
+}
+button.navbar-toggler span{
+    color: #fbbd61;
+}
 
 /* CAROUSEL */
 .movieCarousel{
@@ -121,9 +126,12 @@ header p.phoneNumber{
     top: 0;
     left: 0;
     background: linear-gradient(to top, black, transparent);
-
 }
 #movieCarousel .carousel-item{
+    min-height: 600px;
+    overflow: hidden;
+}
+#movieCarousel .carousel-item img{
     min-height: 600px;
 }
 #movieCarousel .carousel-caption{
@@ -473,6 +481,7 @@ i.movie__star{
 .coming__trailer{
     position: relative;
 }
+
 .coming__trailer i{
     position: absolute;
     display: block;
@@ -629,6 +638,28 @@ footer .copyright a:hover{
     .showTimes .nav-tabs .nav-link{
         padding: 10px 20px 15px;
         font-size: 16px;
+    }
+    .container {
+        padding: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 768px;
+    }
+    .row{
+        margin: 0 -15px;
+    }
+    .coming__detail h1{
+        font-size: 32px;
+    }
+    .coming__detail .coming__date{
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .coming__detail p{
+        font-size: 16px;
+    }
+    .coming__trailer img{
+        margin-top: 40px;
     }
 }
 
