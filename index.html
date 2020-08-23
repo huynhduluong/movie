@@ -26,6 +26,46 @@
 </head>
 
 <body>
+    <div id="hiddenHeader">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark pt-0 px-0">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#movieNavbar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="movieNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item line active">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link " href="#">WHAT'S ON</a>
+                        </li>
+                        <li class="nav-item line">
+                            <a class="nav-link" href="#">SHORTCODE</a>
+                        </li>
+                        <li class="nav-item line dropdown">
+                            <a class="nav-link"  href="#">NEWS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">NEWS SINGLE</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item line pb-2">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+    
+                </div>
+            </nav>
+        </div>
+        
+    </div>
 
     <header class="container">
         <p class="text-white text-right mb-0 phoneNumber ">
@@ -33,11 +73,6 @@
             <span class="ml-2 border-right pr-3">0878 785 457</span>
             <i class="fa fa-search ml-3"></i>
         </p>
-        <!-- <p class="bg-dark text-white container-fluid">
-            <i class="fas fa-phone-alt"></i>
-            <span>0878785457</span>
-            <i class="fa fa-search"></i>
-        </p> -->
 
         <nav class="navbar navbar-expand-lg navbar-dark pt-0 px-0">
             <a class="navbar-brand" href="#">
@@ -1165,6 +1200,25 @@
             interval: 2000
         })
     </script>
+
+    <!-- tạo hiệu ứng cho hidden header -->
+    <script type="text/javascript">
+        var hiddenHeader = document.getElementById("hiddenHeader");
+        
+        window.addEventListener("scroll", myFunction);
+        
+        function myFunction() {
+        
+            if(document.documentElement.scrollTop > 200){
+                // hiddenHeader.style.visibility = "visible";
+                hiddenHeader.style.transform = "translate(-50%,0%)";
+            }else{
+                // hiddenHeader.style.visibility = "hidden";
+                hiddenHeader.style.transform = "translate(-50%,-120%)";
+            }   
+        }
+    </script>
+
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -1184,6 +1238,7 @@
             });
         });
     </script>
+
 
 </body>
 
