@@ -187,21 +187,31 @@ header p.phoneNumber{
     background: white;
 }
 #movieCarousel .carousel-caption .title{
+    position: relative;
     color: #fbbd61;
     font-size: 14px;
     letter-spacing: 2px;
+    animation: captionTitleEffect 0.5s ;
 }
 #movieCarousel .carousel-caption h2{
+    position: relative;
     font-size: 50px;
     font-weight: 300;
     padding: 0;
     letter-spacing: 3px;
+    animation: captionNameFilm 0.5s;
 
 }
 #movieCarousel .carousel-caption p{
+    position: relative;
     font-size: 18px;
     padding-right: 25%;
     margin-bottom: 20px;
+    animation: captionTextEffect 0.5s;
+}
+.movieCarousel__trailer{
+    position: relative;
+    animation: movieCarousel__trailerEffect 0.5s;
 }
 .movieCarousel__trailer>span{
     width: 48px;
@@ -243,6 +253,27 @@ header p.phoneNumber{
     z-index: 1;
     position: relative;
 }
+
+/* Word Effect */
+@keyframes captionTitleEffect{
+    0% {left: -50px;}
+    100% {left: 0px;}
+}
+@keyframes movieCarousel__trailerEffect{
+    0% {left: -50px; top: 50px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes captionNameFilm{
+    0% {left: -50px; top: -50px;}
+    100% {left: 0px; top: 0px;}
+}
+@keyframes captionTextEffect{
+    0% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+
+/*End Word Effect */
 
 img.scroll{
     position: absolute;
