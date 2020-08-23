@@ -54,7 +54,7 @@ html,body{
     width: 100%;
     margin-bottom: 20px;
     max-height: 70px;
-    /* visibility: hidden; */
+    visibility: hidden;
     transition: all 0.5s;
 }
 #hiddenHeader nav.navbar img{
@@ -64,6 +64,16 @@ html,body{
 #hiddenHeader .navbar-nav li.nav-item a.nav-link{
     font-size: 12px;
     
+}
+#movieHiddenNavbar .nav-item {
+    position: relative;
+}
+#movieHiddenNavbar .navbar-nav li.nav-item a.nav-link:hover{
+    color: rgba(255,255,255,1);
+}
+
+#movieHiddenNavbar .nav-item.active::after,#movieHiddenNavbar .nav-item:hover::after{
+    width: 100%;
 }
 /*END HIDDEN HEADER */
 
@@ -691,6 +701,15 @@ footer .copyright a:hover{
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px){
+    nav.navbar>.navbar-brand>img{
+        max-width: 180px;
+    }
+    .navbar-nav li.nav-item a.nav-link{
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 20px 14px;
+        
+    }
     footer h6{
         font-size: 14px;
     }
@@ -730,10 +749,11 @@ footer .copyright a:hover{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     /* chỉnh header */
     nav.navbar>.navbar-brand>img{
         max-width: 150px;
+        max-height: 40px;
     }
     .navbar-collapse{
         margin: 0px -15px;
@@ -788,8 +808,26 @@ footer .copyright a:hover{
     }
     /*End chỉnh header */
 
+    /*Hidden Header*/
     #movieCarousel .carousel-caption p{
         padding-right: 0;
     }   
 
+    #hiddenHeader>.container{
+        padding-top: 0px;
+    }
+    #hiddenHeader>.container nav.navbar>a{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #movieHiddenNavbar .nav-item.active::after{
+        width: 0;
+    }
+    #movieHiddenNavbar .nav-item.active:hover::after{
+        width: 100%;
+    }
+    #movieHiddenNavbar .navbar-nav li.nav-item.active a.nav-link:hover, #movieHiddenNavbar .nav-item.active a.nav-link{
+        color: #ec7532;
+    }
+    /*End Hidden Header*/
 }
