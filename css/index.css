@@ -573,6 +573,10 @@ i.movie__star{
 .coming__trailer:hover  i{
     transform: translate(-50%, -50%) scale(0.9);
 }
+.coming__trailer img{
+    /* margin-top: 40px; */
+    align-items: center;
+}
 .movieList{
     padding: 55px 0px;
     background: black;
@@ -743,9 +747,7 @@ footer .copyright a:hover{
     .coming__detail p{
         font-size: 16px;
     }
-    .coming__trailer img{
-        margin-top: 40px;
-    }
+    
 }
 
 
